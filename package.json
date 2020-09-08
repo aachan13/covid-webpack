@@ -1,0 +1,30 @@
+{
+  "name": "submission",
+  "version": "1.0.0",
+  "description": "submission dicoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start-dev": "webpack-dev-server"
+  },
+  "author": "fadhil",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "html-webpack-plugin": "^4.4.1",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

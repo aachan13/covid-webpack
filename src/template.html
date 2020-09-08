@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Dicoding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container center-align">
+
+
+        <h3>Corona Virus (Covid-19) Statistic</h3> 
+        <div class="divider"></div>
+
+        <div class="row">
+            <div class="col s12">
+                
+            </div>
+        </div>
+        
+        <h4>Global Status  <button id="refresh" class="btn-floating btn-small waves-effect waves-light red darken-1"><i class="material-icons">settings_backup_restore</i></button></h4> 
+        
+        <p id="updateGlobal" class="green-color">
+        
+        </p>
+        
+        <div class="row">
+            
+            <div class="col l4 s12">
+                <div class="card">
+                    <div class="card-content">
+                        <img-covid src="../src/asset/positive.png" alt="Confirmed"></img-covid>
+                        <span id="glCountConfirm" class="card-title count grey-text text-darken-3" style="font-weight: 700;"></span>
+                        <div class="loading-bar">
+
+                        </div>
+                        <p>Confirmed</p>
+                        <p id="globalConfirmYest" class="orange-custom"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col l4 s12">
+                <div class="card">
+                    <div class="card-content">
+                        <img-covid src="../src/asset/recovered.png" alt="Recovered"></img-covid>
+                        <span id="glCountRec" class="card-title count grey-text text-darken-3" style="font-weight: 700;"></span>
+                        <div class="loading-bar">
+                            
+                        </div>
+                        <p>Recovered</p>
+                        <p id="globalRecovYest" class="green-custom"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col l4 s12">
+                <div class="card">
+                    <div class="card-content">
+                        <img-covid src="../src/asset/dead.png" alt="Dead"></img-covid>
+                        <span id="glCountDeath" class="card-title count grey-text text-darken-3" style="font-weight: 700;"></span>
+                        <div class="loading-bar">
+                            
+                        </div>
+                        
+                        <p>Death</p>
+                        <p id="globalDeadYest" class="red-custom"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h4>Country Status <button id="refresh-sm" class="btn-floating btn-small waves-effect waves-light red darken-1"><i class="material-icons">settings_backup_restore</i></button></h4>
+        <p id="updateGlobal" class="green-color">
+
+        </p>
+        <!-- input search -->
+        <div class="row">
+            <div class="col l6 s12 offset-l3 s3">
+                <label>Select country</label>
+                <select id="countryInput" searchable>
+
+                </select>
+            </div>
+        </div>
+
+        <p>
+            Corona virus status in <b><span id="countrySummary"></span> </b><br>
+            <small id="updateSummary" class="green-color"></small>
+        </p>
+
+        <div class="row">
+            <div class="col l4 m4 s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span id="smCountConfirm" class="card-title count orange-custom" style="font-weight: 700;"></span>
+                        <div class="divider"></div>
+                        <div class="loading-bar-sm">
+                            
+                        </div>
+                        <p style="margin-top: 12px;">Confirmed</p>
+                        <p id="countryConfirmYest" class="orange-custom"></p>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span id="smCountRec" class="card-title count green-custom" style="font-weight: 700;"></span>
+                        <div class="divider"></div>
+                        <div class="loading-bar-sm">
+                            
+                        </div>
+                        <p style="margin-top: 12px;">Recovered</p>
+                        <p id="countryRecYest" class="green-custom"></p>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span id="smCountDeath" class="card-title count red-custom" style="font-weight: 700;"></span>
+                        <div class="divider"></div>
+                        <div class="loading-bar-sm">
+                            
+                        </div>
+                        <p style="margin-top: 12px;">Death</p>
+                        <p id="countryDeadYest" class="red-custom"></p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="divider" style="margin-bottom: 8px;"></div>
+        <footer>
+            <div class="row">
+                <div class="col s12">
+                    Created by Achmad Fadhil Pratama. Images by <a href="https://www.iconfinder.com/"><b>Iconfinder</b></a>.
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
